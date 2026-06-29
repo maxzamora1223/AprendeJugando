@@ -408,11 +408,6 @@ border-radius:12px;
     box-shadow: 0 6px 20px rgba(78, 161, 255, 0.5);
 }
 
-@keyframes flotar {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-8px) rotate(3deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
 
 
 .contenedor-recomendados {
