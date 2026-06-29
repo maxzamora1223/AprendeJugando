@@ -373,10 +373,8 @@ border-radius:12px;
 
 .banner-texto-izq .icono-mando {
     font-size: 50px;
-    animation: flotar 3s ease-in-out infinite; 
     filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
 }
-
 .banner-texto-izq h2 {
     color: white;
     font-size: 26px;
