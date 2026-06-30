@@ -1,169 +1,704 @@
-*{margin:0;padding:0;box-sizing;font-family:'Poppins',sans-serif;}
-
-body{background:#f5f7fa;display: flex;flex-direction: column;min-height: 100vh;}
-
-.navbar{background:#04173A;height:70px;display;justify-content;align-items;padding:0 60px;}
-
-.logo{color;font-weight:700;font-size:20px;}
-
-.menu{display;list-style;gap:30px;}
-
-.menu a{color;text-decoration;font-size:13px;font-weight:600;}
-
-
-
-.hero{background:#04173A;position: relative;min-height: 520px;display;justify-content;align-items;padding:50px 60px;overflow: hidden;}
-
-.hero-left{color;max-width:500px;position: relative;z-index: 2;}
-
-.hero-left h1{font-size:70px;line-height:75px;font-weight:700;}
-
-.hero-left span{color:#4ea1ff;}
-
-.hero-left p{margin-top:20px;font-size:18px;line-height:28px;}
-
-.btn{display;margin-top:25px;padding:12px 30px;background:#4381C6;color;text-decoration;border-radius:8px;font-weight:600;}
-
-.hero-right {position: absolute;top: 0;right: 0;width: 60%;height: 100%;z-index: 1;}
-
-.hero-right img{width: 100% !important;height: 100% !important;object-fit: cover !important;object-position: right center !important;border-radius: 0 !important;mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);-webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);}
-
-.destacados{background;padding:50px;}
-
-.destacados h2{text-align;margin-bottom:30px;color:#04173A;}
-
-.cards{display;grid-template-columns(4,1fr);gap:20px;}
-
-.card{overflow;border-radius:12px;}
-
-.card img{width:100%;height:180px;object-fit;display;}
-
-footer{background:#04173A;color;padding:30px;margin-top: auto;}
-
-.footer-content{text-align;}
-
-.page-title{padding:40px;text-align;}
-
-.page-title h1{color:#04173A;font-size:45px;}
-
-.categorias-grid{padding:40px;display;grid-template-columns(3,1fr);gap:25px;}
-
-.categoria-card{background;border-radius:15px;overflow;text-decoration;color;box-shadow:0 3px 10px rgba(0,0,0,.1);display;}
-
-.categoria-card > img{width:100%;height:180px;object-fit;display;}
-
-.categoria-info-header {display: flex;align-items: center;gap: 15px;padding: 15px;background: white;}
-
-.icono-mini {width: 50px !important;height: 50px !important;object-fit: contain;flex-shrink: 0;display: block;}
-
-.categoria-texto {display: flex;flex-direction: column;gap: 2px;}
-
-.categoria-card h3{padding:0;margin:0;color:#04173A;font-size:16px;font-weight:700;}
-
-.categoria-card p{padding:0;margin:0;font-size:13px;color:#666;}
-
-.detalle-juego{display;grid-template-columns:1.2fr 1fr 350px;gap:30px;padding:50px;}
-
-.detalle-imagen img{width:100%;border-radius:15px;}
-
-.detalle-info h1{color:#04173A;margin:15px 0;}
-
-.detalle-info p{line-height:28px;margin-bottom:20px;}
-
-.detalle-info ul{margin-bottom:25px;}
-
-.detalle-info li{list-style;margin-bottom:10px;}
-
-.etiqueta{display;background:#4CAF50;color;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;}
-
-.galeria{background:#f5f7fa;padding:15px;border-radius:15px;}
-
-.galeria h3{margin-bottom:15px;color:#04173A;}
-
-.galeria img{width:100%;height:180px;object-fit;border-radius:12px;}
-
-.contenedor-beneficios {background: #ffffff;margin: 0 60px 50px 60px;padding: 60px 40px;border-radius: 24px;box-shadow: 0 20px 40px rgba(4, 23, 58, 0.04);border: 1px solid rgba(4, 23, 58, 0.02);}
-
-.grid-beneficios {display: grid;grid-template-columns: repeat(5, 1fr);gap: 30px;}
-
-.beneficio-item {text-align: center;padding: 30px 20px;border-radius: 20px;background: #ffffff;border: 2px solid transparent;transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.3s ease, background-color 0.3s ease;cursor: pointer;}
-
-.beneficio-item {transform: translateY(-12px);box-shadow: 0 15px 30px rgba(78, 161, 255, 0.12);border-color: #4ea1ff;background-color: #fafcfe;}
-
-.beneficio-item img {width: 90px;height: 90px;object-fit: contain;margin-bottom: 25px;padding: 18px;background: linear-gradient(135deg, #eef5fc, #e0f0ff);border-radius: 22px;transition: transform 0.4s ease, background 0.3s ease;box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);}
-
-.beneficio-item img {transform: scale(1.1) rotate(5deg);background: linear-gradient(135deg, #4ea1ff, #4381C6);filter: brightness(0) invert(1);}
-
-.beneficio-item h3 {font-size: 16px;color: #04173A;font-weight: 700;margin-bottom: 12px;line-height: 22px;letter-spacing: -0.3px;transition: color 0.3s ease;}
-
-.beneficio-item h3 {color: #4381C6;}
-
-.beneficio-item p {font-size: 13px;color: #64748b;line-height: 20px;}
-
-.banner-frase {padding: 0 60px;margin-bottom: 60px;}
-
-.banner-contenido {background: linear-gradient(135deg, #04173A, #0c2b61);border-radius: 24px;padding: 45px 50px;display: flex;justify-content: space-between;align-items: center;box-shadow: 0 15px 35px rgba(4, 23, 58, 0.2);border: 1px solid rgba(255, 255, 255, 0.05);}
-
-.banner-texto-izq {display: flex;align-items: center;gap: 30px;}
-
-.banner-texto-izq .icono-mando {font-size: 50px;animation: flotar 3s ease-in-out infinite;filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));}
-
-.banner-texto-izq h2 {color: white;font-size: 26px;font-weight: 700;margin-bottom: 6px;letter-spacing: -0.5px;}
-
-.banner-texto-izq p {color: #4ea1ff;font-size: 16px;font-weight: 500;}
-
-.btn-banner {background: #4381C6;color: white;text-decoration: none;padding: 15px 45px;border-radius: 12px;font-weight: 600;font-size: 15px;transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;white-space: nowrap;box-shadow: 0 4px 15px rgba(67, 129, 198, 0.4);}
-
-.btn-banner {background: #4ea1ff;transform: translateY(-3px);box-shadow: 0 6px 20px rgba(78, 161, 255, 0.5);}
-
-@keyframes flotar {0% { transform: translateY(0px) rotate(0deg); }50% { transform: translateY(-8px) rotate(3deg); }100% { transform: translateY(0px) rotate(0deg); }}
-
-.contenedor-recomendados {padding: 0 60px 60px 60px;flex: 1 0 auto;}
-
-.grid-recomendados {display: grid;grid-template-columns: repeat(3, 1fr);gap: 35px;}
-
-.recomendado-card {background: #ffffff;border-radius: 15px;overflow: hidden;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);position: relative;}
-
-.recomendado-card img {width: 100% !important;height: 200px !important;object-fit: cover !important;display: block !important;}
-
-.badge-puntuacion {position: absolute;top: 15px;right: 15px;background: white;color: #04173A;padding: 5px 12px;border-radius: 20px;font-size: 12px;font-weight: 700;box-shadow: 0 2px 8px rgba(0,0,0,0.1);z-index: 5;}
-
-.recomendado-info {padding: 20px;}
-
-.recomendado-info h3 {color: #04173A;font-size: 18px;font-weight: 700;margin-bottom: 10px;}
-
-.categoria-tag {display: inline-block;padding: 4px 10px;border-radius: 6px;font-size: 11px;font-weight: 700;text-transform: uppercase;margin-bottom: 15px;}
-
-.tag-creatividad { background: #e0f2fe; color: #0369a1; }.tag-mates { background: #fef3c7; color: #b45309; }.tag-ciencia { background: #dcfce7; color: #15803d; }
-
-.recomendado-info p {font-size: 13px;color: #555;line-height: 22px;margin-bottom: 0px;min-height: 66px;}
-
-.contenedor-creditos {padding: 0 60px 60px 60px;flex: 1 0 auto;}
-
-.grid-creditos {display: grid;
-
-.contenedor-creditos {padding: 0 60px 60px 60px;}
-
-.grid-creditos {display: grid;grid-template-columns: repeat(2, 1fr);gap: 30px;}
-
-.credito-bloque {background: #ffffff;border-radius: 15px;padding: 30px;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);}
-
-.credito-header {display: flex;align-items: center;gap: 15px;margin-bottom: 20px;}
-
-.credito-icono {font-size: 30px;}
-
-.credito-bloque h2 {color: #04173A;font-size: 22px;font-weight: 700;}
-
-.credito-bloque p {font-size: 14px;color: #555;line-height: 24px;margin-bottom: 20px;}
-
-.credito-lista {list-style-type: none;}
-
-.credito-lista li {font-size: 13.5px;color: #333;padding: 10px 0;border-bottom: 1px solid #f0f2f5;position: relative;padding-left: 20px;}
-
-.credito-lista li::before {content: "•";color: #4381C6;font-weight: bold;font-size: 18px;position: absolute;left: 0;top: 5px;}
-
-.credito-lista li {border-bottom: none;}
-
-.credito-lista a {color: #4381C6;text-decoration: none;font-weight: 600;transition: color 0.2s ease;}
-
-.credito-lista a {color: #04173A;text-decoration: underline;}
+/* ==========================================================================
+   1. CONFIGURACIÓN BASE, RESET UNIVERSAL Y VARIABLES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --azul-oscuro: #002266; 
+    --azul-boton: #0056e0;
+    --azul-hover: #003da8;
+    --gris-fondo: #f4f6f9;
+    --blanco: #ffffff;
+    --negro-texto: #0a1128;
+    --gris-texto: #555555;
+    --gris-borde: #e2e8f0;
+    --verde-tag: #00b074;
+    --fuente-global: 'Poppins', sans-serif;
+    --sombra-tarjeta: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --sombra-hover: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --radio-tarjeta: 12px;
+    --radio-boton: 6px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--fuente-global);
+    background-color: var(--gris-fondo);
+    color: var(--negro-texto);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========================================================================
+   2. NAVBAR & HEADER GLOBAL
+   ========================================================================== */
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 20px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.menu li a {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--blanco);
+    opacity: 0.85;
+}
+
+.menu li a:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   3. HERO DE INICIO (INDEX.HTML) - SOLUCIÓN MAESTRA CON IMAGEN DE FONDO
+   ========================================================================== */
+.hero {
+    width: 100%;
+    /* El degradado se funde de oscuro a transparente de izquierda a derecha, 
+       dejando que la imagen de Minecraft a la derecha complete todo el alto y ancho real */
+    background: linear-gradient(90deg, #020b1e 0%, #051636 40%, rgba(5, 22, 54, 0.1) 65%, rgba(5, 22, 54, 0) 80%), 
+                url('ruta-de-tu-imagen-minecraft.jpg'); 
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: var(--blanco);
+    padding: 0 6%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-left {
+    max-width: 550px; 
+    padding: 40px 0;
+    position: relative;
+    z-index: 5; /* Pone el texto por encima del fondo */
+}
+
+.hero-left h1 {
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-left h1 span {
+    color: #3b82f6;
+}
+
+.hero-left p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero-left .btn {
+    display: inline-block;
+    background-color: var(--azul-boton);
+    color: var(--blanco);
+    padding: 10px 24px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: var(--radio-boton);
+}
+
+.hero-left .btn:hover {
+    background-color: var(--azul-hover);
+}
+
+/* Ocultamos la columna derecha del HTML para que no estorbe */
+.hero-right {
+    display: none; 
+}
+
+/* ==========================================================================
+   4. JUEGOS DESTACADOS - COMPLETA TODO EL ANCHO DE LA BARRA
+   ========================================================================== */
+.destacados {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 0; 
+}
+
+.destacados h2, .page-title h1 {
+    font-size: 1.4rem;
+    color: var(--azul-oscuro);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+.destacados .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.destacados .card {
+    width: 100%;
+    border-radius: var(--radio-tarjeta);
+    overflow: hidden;
+    box-shadow: var(--sombra-tarjeta);
+    background-color: var(--blanco);
+    aspect-ratio: 16 / 10;
+}
+
+.destacados .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   5. PÁGINA: CATEGORÍAS Y GRID DE JUEGOS (JUEGOS.HTML)
+   ========================================================================== */
+.categorias-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 6% 60px 6%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.categoria-card {
+    background-color: var(--blanco);
+    border-radius: var(--radio-tarjeta);
+    box-shadow: var(--sombra-tarjeta);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria-card > img {
+    width: 100%;
+    aspect-ratio: 16 / 8.5;
+    object-fit: cover;
+}
+
+.categoria-info-header {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: var(--blanco);
+    flex-grow: 1;
+}
+
+.icono-mini {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.categoria-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.categoria-texto h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+
+.categoria-texto p {
+    font-size: 0.8rem;
+    color: var(--gris-texto);
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   6. PÁGINA: RECOMENDADOS (RECOMENDADOS.HTML)
+   ========================================================================== */
+.contenedor-recomendados {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 6% 60px 6%;
+}
+
+.grid-recomendados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.recomendado-card {
+    background-color: var(--blanco);
+    border-radius: var(--radio-tarjeta);
+    box-shadow: var(--sombra-tarjeta);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.badge-puntuacion {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(0, 34, 102, 0.85);
+    color: var(--blanco);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.recomendado-card > img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.recomendado-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.recomendado-info h3 {
+    font-size: 1rem;
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+.categoria-tag {
+    align-self: flex-start;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.tag-creatividad { background-color: #e0f2fe; color: #0369a1; }
+.tag-mates { background-color: #fef3c7; color: #b45309; }
+.tag-ciencia { background-color: #dcfce7; color: #15803d; }
+
+.recomendado-info p {
+    font-size: 0.8rem;
+    color: var(--gris-texto);
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   7. VISTA INTERNA DE DETALLE DE JUEGO (MINECRAFT.HTML)
+   ========================================================================== */
+.detalle-juego {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 6% 60px 6%;
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 0.8fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    border-radius: var(--radio-tarjeta);
+}
+
+.detalle-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalle-info .etiqueta {
+    align-self: flex-start;
+    background-color: var(--verde-tag);
+    color: var(--blanco);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.detalle-info h1 {
+    font-size: 1.8rem;
+    color: var(--azul-oscuro);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.detalle-info p {
+    font-size: 0.85rem;
+    color: var(--gris-texto);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.detalle-info h3 {
+    font-size: 1rem;
+    color: var(--azul-oscuro);
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.detalle-info ul {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.detalle-info ul li {
+    font-size: 0.85rem;
+    color: var(--gris-texto);
+}
+
+.detalle-info .btn {
+    align-self: flex-start;
+    background-color: var(--azul-boton);
+    color: var(--blanco);
+    padding: 10px 22px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: var(--radio-boton);
+}
+
+.galeria {
+    background-color: #e2e7f3;
+    padding: 15px;
+    border-radius: var(--radio-tarjeta);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.galeria h3 {
+    font-size: 0.9rem;
+    color: var(--azul-oscuro);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.galeria img {
+    width: 100%;
+    aspect-ratio: 4 / 2.8;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ==========================================================================
+   8. PÁGINA: BENEFICIOS DE JUGAR (BENEFICIOS.HTML)
+   ========================================================================== */
+.contenedor-beneficios {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 6% 40px 6%;
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.beneficio-item {
+    background-color: var(--blanco);
+    border-radius: var(--radio-tarjeta);
+    box-shadow: var(--sombra-tarjeta);
+    padding: 35px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficio-item img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 18px;
+}
+
+.beneficio-item h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+    margin-bottom: 10px;
+}
+
+.beneficio-item p {
+    font-size: 0.75rem;
+    color: var(--gris-texto);
+    line-height: 1.4;
+}
+
+.banner-frase {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner-contenido {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    border-radius: var(--radio-tarjeta);
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-texto-izq {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.banner-texto-izq p:first-of-type {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.banner-texto-izq p:last-of-type {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.banner-contenido .btn {
+    background-color: var(--azul-boton);
+    color: var(--blanco);
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: var(--radio-boton);
+}
+
+/* ==========================================================================
+   9. PÁGINA: FUENTES Y CRÉDITOS (CREDITOS.HTML)
+   ========================================================================== */
+.contenedor-creditos {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 6% 60px 6%;
+}
+
+.grid-creditos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.credito-bloque h2 {
+    font-size: 1.1rem;
+    color: var(--azul-oscuro);
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.credito-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.credito-lista li {
+    font-size: 0.8rem;
+    color: var(--gris-texto);
+}
+
+.credito-lista li a {
+    color: var(--gris-texto);
+}
+
+.credito-lista li a:hover {
+    color: var(--azul-boton);
+}
+
+.credito-bloque p {
+    font-size: 0.85rem;
+    color: var(--gris-texto);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    font-size: 1.2rem;
+    color: var(--azul-oscuro);
+}
+
+/* ==========================================================================
+   10. TITULOS GENERALES Y FOOTER GLOBAL INFERIOR
+   ========================================================================== */
+.page-title {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 6% 10px 6%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 25px 6%;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p:first-child {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-content p:last-child {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   11. MEDIA QUERIES (RESPONSIVE SEGURO)
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .grid-recomendados, .categorias-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .destacados .cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .detalle-juego { grid-template-columns: 1fr 1.2fr; gap: 25px; }
+    .galeria { grid-column: span 2; }
+    .grid-beneficios { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 968px) {
+    .navbar { flex-direction: column; gap: 15px; text-align: center; }
+    .hero { height: auto; padding: 60px 6%; background: #051636; }
+    .hero-container { flex-direction: column; text-align: center; }
+    .hero-left { max-width: 100%; }
+    .grid-creditos { grid-template-columns: 1fr; gap: 30px; }
+    .footer-content { flex-direction: column; gap: 15px; text-align: center; }
+}
+
+@media (max-width: 768px) {
+    .grid-recomendados, .destacados .cards { grid-template-columns: 1fr; }
+    .detalle-juego { grid-template-columns: 1fr; }
+    .galeria { grid-column: span 1; }
+    .menu { gap: 15px; flex-wrap: wrap; justify-content: center; }
+    .grid-beneficios { grid-template-columns: repeat(2, 1fr); }
+    .banner-contenido { flex-direction: column; gap: 20px; text-align: center; }
+    .banner-texto-izq { flex-direction: column; }
+    .hero-left h1 { font-size: 2.4rem; }
+}
+
+@media (max-width: 580px) {
+    .categorias-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .grid-beneficios { grid-template-columns: 1fr; }
+}
